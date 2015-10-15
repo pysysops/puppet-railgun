@@ -1,0 +1,13 @@
+# Set REPO_CONFIGURED to 0 to have the Railgun update repository set to defaults
+# and the GPG key re-imported on the next package update or dpkg --reconfigure
+REPO_CONFIGURED=0
+
+# Set ENABLE_UPDATES to 0 to disable automatic addition of Railgun update repository
+ENABLE_UPDATES=1
+
+# WAIT_TIMEOUT is the number of seconds for the init script to wait for Railgun
+# to open a port before timing out
+WAIT_TIMEOUT=30
+
+# ulimit is set here to prevent encountering open-file limits
+ULIMIT="-n 32768"

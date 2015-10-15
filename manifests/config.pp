@@ -1,4 +1,4 @@
-# == Class: railgun
+# == Class: railgun::config
 #
 # Full description of class railgun here.
 #
@@ -35,15 +35,13 @@
 #
 # Copyright 2015 Your name here, unless otherwise noted.
 #
-class railgun {
+class railgun::config (
+  $port    = '2408',
+  $user    = 'railgun'
+  $options = '',
+  
 
-  Class['::railgun::package'] -> Class['::railgun::config'] ~> Class['::railgun::service']
+) {
 
-  anchor{ 'railgun::begin':
-    before => Class['::railgun::package'],
-    notify => Class['::railgun::service']
-  }
-  anchor{ 'railgun::end':
-    require => Class['::railgun::service'],
-  }
+
 }
