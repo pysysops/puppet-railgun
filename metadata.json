@@ -1,0 +1,14 @@
+{
+  "name": "pysysops-railgun",
+  "version": "0.1.0",
+  "author": "pysysops",
+  "summary": "Install and Configure Cloudflare's Railgun",
+  "license": "Apache 2.0",
+  "source": "https://github.com/pysysops/puppet-railgun",
+  "project_page": "https://github.com/pysysops/puppet-railgun",
+  "issues_url": "https://github.com/pysysops/puppet-railgun/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
